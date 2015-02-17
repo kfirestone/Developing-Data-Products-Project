@@ -14,6 +14,23 @@ knit        : slidify::knit2slides
 ## Overview
 
 * An application which allows for radian angle inputs and displays both the value of the 6 trigonometric functions at the input angle and a unit circle displaying the radian angle
+* For instance if the input angle given was 1 radian then we would have the following
+
+```{r, echo = FALSE}
+Sine <- round(sin(1),3)
+Cosine <- round(cos(1),3)
+Tangent <- round(tan(1),3)
+Secant <- round(1/cos(1),3)
+Cosecant <- round(1/sin(1),3)
+Cotangent <- round(1/tan(1),3)
+
+paste("sin(1) =", Sine)
+paste("cos(1) =", Cosine)
+paste("tan(1) =", Tangent)
+paste("sec(1) =", Secant)
+paste("csc(1) =", Cosecant)
+paste("cot(1) =", Cotangent)
+```
 
 ---
 
